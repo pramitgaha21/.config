@@ -9,6 +9,7 @@ return {
                                 json = { "prettier" },
                                 zig = { "zigfmt" },
                                 bash = { "shellharden" },
+                                yaml = { "jq" }
                         },
                         format_on_save = {
                                 lsp_fallback = true,

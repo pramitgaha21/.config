@@ -22,3 +22,11 @@ vim.keymap.set("n", "<C-h>", "<C-w>h", { remap = true, silent = true })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { remap = true, silent = true })
 vim.keymap.set("n", "<C-k>", "<C-w>k", { remap = true, silent = true })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { remap = true, silent = true })
+
+-- code navigation
+
+-- jumps to the definition
+vim.keymap.set("n", "gd", '<cmd>lua vim.lsp.buf.definition()<cr>')
+
+-- humps to the declaration
+vim.keymap.set("n", "gD", '<cmd>lua vim.lsp.buf.declaration()<cr>')
